@@ -1,15 +1,18 @@
 <?php
-    class Database{
-        var $host = "localhost";
-        var $uname = "root";
-        var $pass = "";
-        var $db = "mahasiswa";
-        var $connection;
+class Database{
 
-        function Connect(){
-            $this->connection=mysqli_connect($this->host,$this->uname,$this->pass,$this->db);
-            return $this->connection;
-        }
-    }
+var $host = "localhost";
+var $username = "root";
+var $password = "";
+var $database = "mahasiswa";
+var $connection;
+
+
+function Connect(){
+$this->connection=mysqli_connect($this->host, $this->username, $this->password,$this->database);
+return $this->connection;
+
+}
+}
 
 ?>
